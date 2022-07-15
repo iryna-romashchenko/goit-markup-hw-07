@@ -38,6 +38,12 @@ body {
     width: 1200px;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 header {
     border-bottom: 1px solid var(--border-color);
     padding: 24px 0;
@@ -63,13 +69,6 @@ header {
     color: var(--logo-text-color);
 }
 
-/* any list */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 /* site nav */
 
 .site-nav {
@@ -82,7 +81,7 @@ ul {
 }
 
 .site-nav .link {
-    padding-top: 32px ;
+    padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
     font-weight: 500;
@@ -113,8 +112,6 @@ ul {
 
 
 
-
-
 /* header contacts */
 .contacts {
     display: flex;
@@ -125,14 +122,6 @@ ul {
     display: flex;
 }
 
-/* justify-content: center;
-    align-items: center; */
-/* font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
- */
-
 .contacts .contact-item+.contact-item {
     margin-left: 50px;
 }
@@ -142,6 +131,7 @@ ul {
 }
 
 .contact-link {
+    display: flex;
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
     font-weight: 500;
@@ -159,10 +149,6 @@ ul {
     fill: var(--accent-color);
 }
 
-/* .contacts list {
-    display: flex;
-    margin-right: 10px;
-} */
 
 .filters-nav .link {
     color: var(--accent-color);
@@ -213,6 +199,7 @@ ul {
 }
 
 .backdrop{
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -266,7 +253,7 @@ fill: var(--accent-color);
 }
 
 .close-icon {
-    fill: var(--primary-text-color);
+    fill: var(--logo-text-color);
     width: 15px;
     height: 15px;
     border: 1px solid transparent;
@@ -293,7 +280,7 @@ width: 100%;
 top: 50%;
 left: 0;
 display: block;
-margin-bottom: 5px;
+margin-bottom: 4px;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.16;
@@ -363,13 +350,34 @@ fill: var(--accent-color);
 
 .input-checkbox{
     width: 16px;
-    height: 16px;
+    height: 15px;
 }
+.fake{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: -17px;
+}
+
+.input-checkbox:checked + .fake{
+    /* background-color: var(--accent-color); */
+    /* background-image:url(../images/icons/symbol-defs.svg#icon-icon-check1) ; */
+    /* background-size: contain;
+    background-origin: border-box; */
+    border: 2px solid var(--accent-color);
+
+}
+
 .contract-checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
    .checkbox-icon { 
     display: flex;
@@ -377,7 +385,7 @@ fill: var(--accent-color);
     align-items: center;
     margin-right: 7px;
     width: 16px;
-    height: 16px;
+    height: 15px;
     top: 50%;
     transform: translateY(-50%);
     
@@ -389,7 +397,6 @@ fill: var(--accent-color);
     fill: var(--accent-color);
     opacity: 0;
     transition: border 250ms var(--timing-function), background 250ms var(--timing-function);
-    
     }
 
 .input-checkbox:checked+.checkbox-icon {
@@ -419,7 +426,8 @@ background-color: var(--accent-color);
 
 .form-button{
     border: none;
-    background-color: var
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
     width: 200px;
     height: 50px;
     padding: 10px 55px;
@@ -429,15 +437,15 @@ background-color: var(--accent-color);
     letter-spacing: 0.06em;
     border-radius: 4px;
     cursor: pointer;
-    transition: border 250ms var(--timing-function), background 250ms var(--timing-function);
+    /* transition: border 250ms var(--timing-function), background 250ms var(--timing-function); */
 }
 
-.form-button:hover,
+/* .form-button:hover,
 .form-button:focus {
 color: var(--primary-white-color);
 background-color: var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 
 /* Заказать услугу */
