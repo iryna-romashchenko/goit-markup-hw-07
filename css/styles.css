@@ -680,7 +680,7 @@ margin: 0;
     padding-bottom: 94px;
 }
 
-.clients-title {
+.clients__title {
     text-align: center;
     color: var(--title-text-color);
     font-weight: 700;
@@ -697,12 +697,12 @@ margin: 0;
     align-items: center;
 }
 
-.clients-list .clients-item:not(:last-child) {
-    margin-right: 30px;
+.clients-list__item{
+    width: 170px;
 }
 
-.clients-item {
-    width: 170px;
+.clients-list__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .button-client {
