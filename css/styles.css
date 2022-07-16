@@ -231,7 +231,7 @@ header {
 }
 
 
-.close-button {
+.modal__close {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@ fill: var(--accent-color);
     border: 1px solid transparent;
 }
 
-.callback {
+.modal__title {
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: 700;
@@ -276,7 +276,7 @@ margin-bottom: 10px;
 transition: border 250ms var(--timing-function);
 }
 
-.input-title{
+.form-field__title{
 width: 100%;
 top: 50%;
 left: 0;
@@ -290,7 +290,7 @@ color: var(--primary-text-color);
 text-align: left;
 }
 
-.form-input{
+.form-field__input{
     display: block;
     width: 100%;
     height:40px;
@@ -305,24 +305,24 @@ text-align: left;
    
 }
 
-.form-input:focus-within,
-.form-input:hover{
+.form-field__input:focus-within,
+.form-field__input:hover{
     border: 1px solid var(--accent-color);
 }
 
-.input-icon {
+.form-field__icon {
     position: absolute;
     top: 30px;
     left: 10px;
     transition: border 250ms var(--timing-function);
 }
 
-.form-field:focus-within .input-icon,
-.form-field:hover .input-icon{
+.form-field:focus-within .form-field__icon,
+.form-field:hover .form-field__icon{
 fill: var(--accent-color);
 }
 
-.textarea-field {
+.form-field__textarea {
     outline: none;
     resize: none;
     justify-content: center;
@@ -338,18 +338,18 @@ fill: var(--accent-color);
 
 }
 
-.textarea-field:focus,
- .textarea-field:hover{
+.form-field__textarea:focus,
+ .form-field__textarea:hover{
     border: 1px solid var(--accent-color);
 }
 
-  .checkbox {
+  .modal-agreement {
     display: block;
     position: relative;
     
 }
 
-.input-checkbox{
+.modal__input{
     width: 16px;
     height: 15px;
 }
@@ -362,7 +362,7 @@ fill: var(--accent-color);
     margin-left: -16px;
 }
 
-.input-checkbox:checked + .fake{
+.modal__input:checked + .fake{
     /* background-color: var(--accent-color); */
     /* background-image:url(../images/icons/symbol-defs.svg#icon-icon-check1) ; */
     /* background-size: contain;
@@ -371,7 +371,7 @@ fill: var(--accent-color);
 
 }
 
-.contract-checkbox {
+.modal__box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,32 +400,32 @@ fill: var(--accent-color);
     transition: border 250ms var(--timing-function), background 250ms var(--timing-function);
     }
 
-.input-checkbox:checked+.checkbox-icon {
+.modal__input:checked+.checkbox-icon {
     background-color: var(--accent-color);
     background-origin: border-box;
     border-color: var(--accent-color);
     fill: var(--primary-white-color);
 }
 
-.input-checkbox:checked+.checkbox-icon:focus,
-.input-checkbox:checked+.checkbox-icon:hover {
+.modal__input:checked+.checkbox-icon:focus,
+.modal__input:checked+.checkbox-icon:hover {
 background-color: var(--accent-color);
 }
 
 
 
-.text-checkbox {
+.modal__text {
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-text-color);
 }
 
-.checkbox-link {
+.modal__link {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
-.form-button{
+.form__button{
     border: none;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
@@ -440,13 +440,6 @@ background-color: var(--accent-color);
     cursor: pointer;
     /* transition: border 250ms var(--timing-function), background 250ms var(--timing-function); */
 }
-
-/* .form-button:hover,
-.form-button:focus {
-color: var(--primary-white-color);
-background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} */
 
 
 /* Заказать услугу */
