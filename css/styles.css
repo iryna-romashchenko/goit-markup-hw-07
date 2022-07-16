@@ -731,14 +731,14 @@ margin: 0;
     justify-content: center;
 }
 
-/* filters */
+/* ----------------------------------------------------Filters------------------------------------------------------------ */
 
 .filters {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.filter {
+.filters-list__item {
     display: inline-block;
     padding: 6px 22px;
     /* height: 38px; */
@@ -757,17 +757,17 @@ margin: 0;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter:hover,
-.filter:focus {
+.filters-list__item:hover,
+.filters-list__item:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
-.filter-title {
+.filters__title {
     display: none;
 }
 
-.filters-nav {
+.filters-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
