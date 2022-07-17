@@ -32,14 +32,11 @@
     height: 260px;
 }
 
-.team-list__member:not(:last-child){
+.team-list{
+&__member:not(:last-child){
     margin-right: 30px;
 }
-
-/* .team-list .team-member:not(:last-child) {
-    margin-right: 30px;
-} */
-
+}
 .specialist {
     display: block;
     padding-top: 30px;
@@ -77,10 +74,11 @@
     fill: var(--icon-fill);
 }
 
-.specialist-links__item:not(:last-child) {
+.specialist-links{
+&__item:not(:last-child) {
     margin-right: 10px;
 }
-
+}
 
 .icon-link {
     display: flex;

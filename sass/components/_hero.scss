@@ -138,9 +138,11 @@
 
 }
 
-.form-field__input:focus-within,
-.form-field__input:hover {
+.form-field{
+    &__input:focus-within,
+    &__input:hover {
     border: 1px solid var(--accent-color);
+}
 }
 
 .form-field__icon {
@@ -171,9 +173,11 @@
 
 }
 
-.form-field__textarea:focus,
-.form-field__textarea:hover {
+.form-field{
+    &__textarea:focus,
+    &__textarea:hover {
     border: 1px solid var(--accent-color);
+}
 }
 
 .modal-agreement {
@@ -197,10 +201,6 @@
 }
 
 .modal__input:checked+.fake {
-    /* background-color: var(--accent-color); */
-    /* background-image:url(../images/icons/symbol-defs.svg#icon-icon-check1) ; */
-    /* background-size: contain;
-    background-origin: border-box; */
     border: 2px solid var(--accent-color);
 
 }

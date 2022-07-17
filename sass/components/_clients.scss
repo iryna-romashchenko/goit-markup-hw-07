@@ -26,9 +26,33 @@
     width: 170px;
 }
 
-.clients-list__item:not(:last-child) {
+// .clients-list__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+.clients-list{
+&__item:not(:last-child) {
     margin-right: 30px;
 }
+}
+// .button-client {
+//     display: flex;
+//     justify-content: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--icon-fill);
+//     fill: var(--icon-fill);
+//     border-radius: 4px;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .button-client:hover,
+// .button-client:focus {
+//     fill: var(--accent-color);
+//     border: 1px solid var(--accent-color);
+// }
+
 
 .button-client {
     display: flex;
@@ -40,12 +64,11 @@
     border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-client:hover,
-.button-client:focus {
+&:hover,
+&:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
 }
 
 .button-icon {

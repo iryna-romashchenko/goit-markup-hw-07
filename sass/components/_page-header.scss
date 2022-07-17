@@ -32,8 +32,10 @@ header {
     margin-left: 93px;
 }
 
-.site-nav__item:not(:last-child) {
+.site-nav{
+    &__item:not(:last-child) {
     margin-right: 50px;
+}
 }
 
 .site-nav__link {
@@ -49,9 +51,11 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav{
+    &__link:hover,
+    &__link:focus {
     color: var(--accent-color);
+}
 }
 
 .site-nav__link-current::after {
@@ -99,8 +103,10 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__link:hover,
-.contact__link:focus {
+.contact{
+&__link:hover,
+&__link:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+}
 }

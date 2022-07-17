@@ -10,13 +10,11 @@
 
 }
 
-.works-list__item:not(:last-child) {
+.works-list{
+&__item:not(:last-child) {
     margin-right: 30px;
 }
-
-/* .works-list .work:not(:last-child) {
-    margin-right: 30px;
-} */
+}
 
 .works-section__title {
     text-align: center;
