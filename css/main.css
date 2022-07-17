@@ -87,8 +87,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -135,8 +134,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__link:hover,
-.contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -277,8 +275,7 @@ header {
   transition: border 250ms var(--timing-function);
 }
 
-.form-field__input:focus-within,
-.form-field__input:hover {
+.form-field__input:focus-within, .form-field__input:hover {
   border: 1px solid var(--accent-color);
 }
 
@@ -308,8 +305,7 @@ header {
   border-radius: 4px;
 }
 
-.form-field__textarea:focus,
-.form-field__textarea:hover {
+.form-field__textarea:focus, .form-field__textarea:hover {
   border: 1px solid var(--accent-color);
 }
 
@@ -333,10 +329,6 @@ header {
 }
 
 .modal__input:checked + .fake {
-  /* background-color: var(--accent-color); */
-  /* background-image:url(../images/icons/symbol-defs.svg#icon-icon-check1) ; */
-  /* background-size: contain;
-  background-origin: border-box; */
   border: 2px solid var(--accent-color);
 }
 
@@ -519,9 +511,6 @@ header {
   margin-right: 30px;
 }
 
-/* .works-list .work:not(:last-child) {
-    margin-right: 30px;
-} */
 .works-section__title {
   text-align: center;
   color: var(--title-text-color);
@@ -598,9 +587,6 @@ header {
   margin-right: 30px;
 }
 
-/* .team-list .team-member:not(:last-child) {
-    margin-right: 30px;
-} */
 .specialist {
   display: block;
   padding-top: 30px;
@@ -706,9 +692,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-client:hover,
-.button-client:focus {
+.button-client:hover, .button-client:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -758,8 +742,11 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
+.footer-contacts__address:hover, .footer-contacts__address:focus {
+  color: var(--accent-color);
+}
+
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -804,9 +791,6 @@ header {
   margin-right: 10px;
 }
 
-/* .join-list .social-link:not(:last-child) {
-    margin-right: 10px;
-} */
 .social-link {
   fill: var(--primary-white-color);
 }
@@ -898,21 +882,6 @@ header {
 }
 
 /* ----------------------------filters--------------------------- */
-.filters-nav .link {
-  color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filters-nav .link:hover,
-.filters-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.link.current {
-  color: var(--accent-color);
-}
-
 .filters {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -937,8 +906,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filters-list__item:hover,
-.filters-list__item:focus {
+.filters-list__item:hover, .filters-list__item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -963,6 +931,7 @@ header {
 .samples-list {
   display: flex;
   flex-wrap: wrap;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .samples-list__item {
@@ -971,12 +940,12 @@ header {
   flex-basis: calc((100% - 60px) / 3);
   max-width: 370px;
   background: var(--primary-white-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .samples-list__item:nth-of-type(3n) {
   margin-right: 0;
 }
-
 .samples-list__item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
@@ -1016,7 +985,7 @@ header {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sample-overlay > p {
+.sample-overlay__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -1025,8 +994,7 @@ header {
   color: var(--primary-white-color);
 }
 
-.samples-list__item:hover,
-.samples-list__item:focus {
+.samples-list__item:hover, .samples-list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
